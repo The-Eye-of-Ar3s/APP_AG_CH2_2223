@@ -1,0 +1,269 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{chemfig}
+\usepackage{layout}
+\usepackage{mhchem}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\title{Chem 2}
+\author{Etienne Herzig}
+\date{21. September 2022}
+
+\begin{document}
+\setlength{\textheight}{680pt}
+
+\maketitle
+\clearpage
+\section{Overview}
+\subsection{Grading}
+Only the better two tests get counted and make up 80\% of the grade.
+Homework \& Assignments should be submitted within online within two weeks and make up 20\% of the grade.
+ A bonus of ~4\% can be earned with consistent presence
+\subsection{Test Dates}
+\date{9.11.2022}\hfill\break
+\date{14.12.2022}\hfill\break
+\date{25.01.2023}\hfill\break
+\clearpage
+\section{Lessons}
+\subsection{Lesson 1 - 21.09.2022}
+Revision of principles learned in Chem 1, which bear relevance in Chem 2. \break
+Important things to remember: \hfill
+\begin{itemize}
+    \item 1. Distinction Atom / Molecule
+    \item 2. Polar / Non-Polar
+    \begin{itemize}
+        \item A molecule is polar if the majority of bond in said molecule are polar. A bond is polar if one Atom in the bond has a higher electronegativity.
+        \item Important Polar Bonds
+        \begin{itemize}
+            \item C - O
+            \item O - H
+            \item N - H
+        \end{itemize}
+        \item Important Non-Polar Bonds
+        \begin{itemize}
+            \item C - C
+            \item C - H
+        \end{itemize}
+        \item Boiling Points are related to the inter-molecular bond strength. (The higher the bond strength between molecules the higher the boiling point)
+        \item There are three relevant inter-molecular bond forces (here ranked by strength from weakest to strongest)
+        \begin{itemize}
+            \item Van der Walls forces\hfill\break Occurs in non-polar bonds.\hfill\break non-polar molecules gain in bond strength the longer the "chain" of the molecule and the less "branched" it is.
+            \item The Dipol-Dipol Force\hfill\break Occurs in polar bonds\hfill
+            \item Hydrogen Bond ( Wasserstoffbrücken )\hfill\break Occurs in polar bonds involving a Hydrogen Atom (Overrules the Dipol-Dipol Force)
+        \end{itemize}
+    \end{itemize}
+    \item 3. SP3 Hybridisierung
+    \begin{itemize}
+        \item the S1 Orbital can be combined with the P Orbital to form the SP3 Orbital, which is on a single energy level.
+    \end{itemize}
+\end{itemize}
+\clearpage
+Examples:\hfill
+\begin{itemize}
+    \item A:  \chemfig{C-C(-[2]H)(-[6]H)-\charge{90=\|,270=\|}{O}-H}\hspace{1cm}
+    \begin{itemize}
+        \item A Has 3 Non Polar Bonds ( C-C, C-H, C-H )\hfill\break and 3 Polar Bonds ( C-O, C-H ) and is therefore Non-Polar.
+    \end{itemize}
+    \item B:  \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-O-H}
+    \begin{itemize}
+        \item B has 7 Non Polar Bonds ( C-H * 7 )\hfill\break and 2 Polar Bonds ( C-O, O-H ) is therefore Non-Polar. ( more than A)
+    \end{itemize}
+    \item C:  \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}
+    \begin{itemize}
+        \item C has 10 Non Polar Bonds ( C-H * 7 ) and 0 Polar Bonds and is therefore exclusively Non-Polar.
+    \end{itemize}
+    \item D:  \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}
+    \begin{itemize}
+        \item D  has 19 Non Polar Bonds ( C-C * 5, C-H * 14) and is therefore exclusively Non-Polar.
+    \end{itemize}
+    \item E:  \chemfig{H-C(-[2]H)(-[6]H)--C(-[2]C(-[0]H)(-[4]H))(-[6]C(-[0]H)(-[4]H))--C(-[2]H)(-[6]H)-H}
+    \begin{itemize}
+        \item E  has 19 Non Polar Bonds ( C-C * 5, C-H * 14) and is therefore exclusively Non-Polar.\hfill\break It however has a lower boiling point than item D, because the Van der waals bonds are weaker when more "nested".
+    \end{itemize}
+
+
+\chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}
+\end{itemize}
+\clearpage
+\subsection{Lesson 2 - 28.09.2022}
+Organic Chemistry\hfill\break
+What is Organic Chemistry\hfill\break
+\begin{itemize}
+    \item Old - The Chemistry of Alive Stuff
+    \item New - The Chemistry of Carbon including some exceptions
+\end{itemize}
+Hydrocarbons\hfill\break
+\begin{itemize}
+    \item Saturated Hydrocarbons
+    \begin{itemize}
+        \item Just single bonds
+    \end{itemize}
+    \item Unsaturated Hydrocarbons
+    \begin{itemize}
+        \item Allows all bonds
+    \end{itemize}
+\end{itemize}
+Alkane
+\begin{itemize}
+    \item Methane - C1H4
+    \item \chemfig{H-C(-[2]H)(-[6]H)-H}
+    \item Ethane - \ce{C2H6}
+    \item \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}
+    \item Propane - \ce{C3H8}
+    \item \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}
+    \item Butane - \ce{C4H10}
+    \item \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}
+    \clearpage
+    \item Pentane - \ce{C5H12}
+    \item \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}
+    \item Hexane - \ce{C6H14}
+    \item \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}
+    \item Heptane - \ce{C7H16}
+    \item \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}
+    \item Octane - \ce{C8H18}
+    \item \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}
+    \item Nonane - \ce{C9H20}
+    \item \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}
+    \item Decane - \ce{C10H22}
+    \item \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}
+\end{itemize}
+\clearpage
+\noindent Drawing Conventions:\hfill\break
+Example: Pentane
+\begin{itemize}
+    \item \chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-H}
+    \item \chemfig{CH3-CH2-CH2-CH2-CH3}
+    \item \chemfig{-[1]-[-1]-[1]-[-1]}
+\end{itemize}
+Isomers \hfill\break
+Example: Hexane
+\begin{itemize}
+    \item \chemfig{-[1]-[-1]-[1]-[-1]-[1]}
+    \item \chemfig{-[1](-[2])-[-1]-[1]-[-1]}
+    \item \chemfig{-[1]-[-1](-[6])-[1]-[-1]}
+    \item \chemfig{-[1](-[2])-[-1](-[6])-[1]-[-1]}
+    \item \chemfig{-[1](-[2])(-[6])-[-1]-[1]-[-1]}
+\end{itemize}
+\clearpage
+\subsection{Lesson 3 - 05.10.2022}
+Benennung von Alkanen mit IUPAC
+
+\noindent Rezept:
+\begin{itemize}
+    \item Längste C-Kette gibt Stammnamen
+    \item Nummerieren der Stammkette
+    \item Lage der Seitenketten durch vorherige Nummern angeben
+    \item Länge der Seitenkette: Stamm + yl
+    \item Bei mehreren gleichen Seitenketten: Di-, Tri-, Tetra-, Penta-, …
+    \item Seitenketten alphabetisch nach Stamm eingeben
+    \item Stammname hinten hinschreiben
+\end{itemize}
+\noindent Rechtschreibregeln:
+\begin{itemize}
+    \item Zwischen zwei Zahlen: Beistrich
+    \item Zwischen Zahl und Buchstabe: Bindestrich
+    \item Erster Buchstabe groß, alle anderen klein
+    \item Wörter zusammenschreiben
+\end{itemize}
+\clearpage
+Beispiel:\hfill\break\vspace{2cm}
+\chemfig{-[1]-[-1]-[1](-[-6]-[3])(-[-2]-[-3])-[-1](-[-2.25])(-[-6])-[-7](-[-2])(-[-6]-[1]-[-6])-[-1](-[1]-[-1])(-[-3])-[-2](-[0])-[-3](-[-2])-[2.75]}
+
+\noindent 1. - Längste C-Kette gibt Stammnamen.\hfill\break
+\noindent Hier ist die längste Kette ein Decan, und bildet somit den Stamm des Moleküls.\hfill\break
+
+\noindent 2. Nummerieren der Stammkette\vspace{1cm}
+
+\chemfig{10-[1]9-[-1]8-[1]7(-[-6]-[3])(-[-2]-[-3])-[-1]6(-[-2.25])(-[-6])-[-7]5(-[-2])(-[-6]-[1]-[-6])-[-1]4(-[1]-[-1])(-[-3])-[-2]3(-[0])-[-3]2(-[-2]1)-[2.75]}
+
+\clearpage
+\noindent 3. - Lage der Seitenketten durch vorherige Nummern angeben.\hfill\break
+\noindent 4. - Länge der Seitenkette: Stamm + yl.\hfill\break
+
+\begin{center}
+    \begin{tabular}{c|c}
+         N C-Atom & Kette  \\
+         \hline
+         2 & Methyl \\
+         \hline
+         3 & Methyl \\
+         \hline
+         4 & Methyl \\
+         4 & Ethyl \\
+         \hline
+         5 & Methyl \\
+         5 & Propyl \\
+         \hline
+         6 & Methyl \\
+         6 & Methyl \\
+         \hline
+         7 & Ethyl \\
+         7 & Ethyl \\
+         \hline
+    \end{tabular}
+    
+    \vspace{2cm}
+    
+    \begin{tabular}{c|c}
+        Kette & Anzahl \\
+        \hline
+        Methyl & 6 \\
+        Ethyl & 3 \\
+        Propyl & 1 \\
+    \end{tabular}
+\end{center}
+
+
+\noindent Bei mehreren gleichen Seitenketten: Di-, Tri-, Tetra-, Penta-, …:\hfill\vspace{1cm}\break
+
+\noindent 6 Methyl-Ketten $\implies$ Hexamethyl\hfill\break
+\noindent 3 Ethyl-Ketten $\implies$ Triethyl\hfill\break
+\noindent 1 Propyl-Kette $\implies$ Propyl\hfill\vspace{5mm}\break
+
+
+\noindent Seitenketten alphabetisch nach Stamm eingeben:\hfill\vspace{5mm}\break
+\noindent der Hex \& Tri Prefix ist nicht teils des Stammes und wird somit nicht im Sortieren betrachtet.\hfill\vspace{5mm}\break
+
+\noindent Lösung:\hfill\vspace{5mm}\break
+\noindent $4,7,7-Triethyl-2,3,4,5,6,6-Hexamethyl-5-Propyldecan$\hfill\break
+
+\clearpage
+\noindent Ringförmige Alkane\hfill\break
+
+\noindent\begin{tabular}{c|c|c}
+    Structure & Composition & Name  \\
+    \hline
+    \noalign{\vskip 2mm}    
+    \chemfig{[:30]*3(---)}& \ce{C3H6} & Cyclopropan \\
+    \hline
+    \noalign{\vskip 2mm}    
+    \chemfig{*4(----)} & \ce{C4H8} & Cyclobutan \\
+    \hline
+    \noalign{\vskip 2mm}    
+    \chemfig{[:18]*5(-----)} & \ce{C5H10} & Cyclopentan \\
+    \hline
+    \noalign{\vskip 2mm}    
+    \chemfig{[:30]*6(------)} & \ce{C6H12} & Cyclohexan \\
+    \hline
+\end{tabular}
+
+\vskip 1cm
+
+\noindent Cyclohexan liegt nicht flach und hat in dem 3-Dimensionalen Raum zwei verschiedene Formen:\hfill\break
+\begin{itemize}
+    \item Sesselform (am energieärmsten deswegen die häufigste und stabilste)
+    %\item \chemfig[bond join=true]{-[:50]-[:-10]-[:10]-[:-130,,,,line width=1pt]-[:170,,,,line width=1pt]-[:190,,,,line width=1pt]}
+    \item Halbsesselform
+    \item Twist
+    \item Wanne
+\end{itemize}
+
+\vskip 1cm
+
+\noindent Hier eine Illustration, welche die Struktur der Formen zeigt:\hfill\break
+\includegraphics[width=36.3mm, height=33.65mm]{cyclohexan.png}
+\vskip 1cm
+\noindent Hier eine Illustration, welche die Energie der Formen zeigt:\hfill\break
+\includegraphics[width=58mm, height=40mm]{cyclohexan_energy.png}
+\end{document}
